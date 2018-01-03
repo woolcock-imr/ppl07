@@ -39,6 +39,8 @@
 						,{"module_id":"m_003_007","name":"DASS","table_id":"20005805","url":"/modules/dynamic/ppl07/task/dass.html","counting":"1"}
 						,{"module_id":"m_003_008","name":"Happy Questionnaire","table_id":"20005809","url":"/modules/dynamic/ppl07/task/hq.html","counting":"1"}
 						,{"module_id":"m_003_009","name":"PSQI","table_id":"20005813","url":"/modules/dynamic/ppl07/task/psqi.html","counting":"1"}
+						,{"module_id":"m_003_010","name":"PWA 1","table_id":"20005814","url":"/modules/dynamic/ppl07/task/pwa.html","counting":"1"}
+						,{"module_id":"m_003_011","name":"PWA 2","table_id":"20005815","url":"/modules/dynamic/ppl07/task/pwa.html","counting":"1"}
 						,{"module_id":"m_003_012","name":"Biochemistry Test 1","table_id":"20005796","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
 						,{"module_id":"m_003_013","name":"Biochemistry Test 2","table_id":"20005797","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
 						,{"module_id":"m_003_014","name":"Biochemistry Test 3","table_id":"20005798","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
@@ -73,6 +75,8 @@
 						,{"module_id":"m_005_007","name":"DASS","table_id":"20005871","url":"/modules/dynamic/ppl07/task/dass.html","counting":"1"}
 						,{"module_id":"m_005_008","name":"Happy Questionnaire","table_id":"20005875","url":"/modules/dynamic/ppl07/task/hq.html","counting":"1"}
 						,{"module_id":"m_005_009","name":"PSQI","table_id":"20005879","url":"/modules/dynamic/ppl07/task/psqi.html","counting":"1"}
+						,{"module_id":"m_005_010","name":"PWA 1","table_id":"20005880","url":"/modules/dynamic/ppl07/task/pwa.html","counting":"1"}
+						,{"module_id":"m_005_011","name":"PWA 2","table_id":"20005881","url":"/modules/dynamic/ppl07/task/pwa.html","counting":"1"}
 						,{"module_id":"m_005_012","name":"Biochemistry Test 1","table_id":"20005861","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
 						,{"module_id":"m_005_013","name":"Biochemistry Test 2","table_id":"20005862","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
 						,{"module_id":"m_005_014","name":"Biochemistry Test 3","table_id":"20005863","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
@@ -93,7 +97,7 @@
 					]},
 					{"name":"5a. CPAP Compliance Data Treatment Arm 1 (Week 8)","modules":[
 						{"module_id":"m_006_002","name":"CPAP Summary","table_id":"20005889","url":"/modules/dynamic/ppl07/task/cpap_summary.html","counting":"1"}
-						,{"module_id":"m_006_003","name":"Compliance Upload","table_id":"20005888","url":"/modules/dynamic/ppl07/task/document.html","counting":"1"}
+						,{"module_id":"m_006_003","name":"Compliance Upload","table_id":"20005888","url":"/modules/dynamic/ppl07/task/document_3.html","counting":"1"}
 						]},
 						{"name":"6. Brief Hospital Visit (Week 12)","modules":[
 							{"module_id":"m_007_001","name":"Anthropometric","table_id":"20005821","url":"/modules/dynamic/ppl07/task/anthropometry.html","counting":"1"}
@@ -123,6 +127,8 @@
 							,{"module_id":"m_009_007","name":"DASS","table_id":"20005843","url":"/modules/dynamic/ppl07/task/dass.html","counting":"1"}
 							,{"module_id":"m_009_008","name":"Happy Questionnaire","table_id":"20005847","url":"/modules/dynamic/ppl07/task/hq.html","counting":"1"}
 							,{"module_id":"m_009_009","name":"PSQI","table_id":"20005852","url":"/modules/dynamic/ppl07/task/psqi.html","counting":"1"}
+							,{"module_id":"m_009_010","name":"PWA 1","table_id":"20005853","url":"/modules/dynamic/ppl07/task/pwa.html","counting":"1"}
+							,{"module_id":"m_009_011","name":"PWA 2","table_id":"20005854","url":"/modules/dynamic/ppl07/task/pwa.html","counting":"1"}
 							,{"module_id":"m_009_012","name":"Biochemistry Test 1","table_id":"20005833","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
 							,{"module_id":"m_009_013","name":"Biochemistry Test 2","table_id":"20005834","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
 							,{"module_id":"m_009_014","name":"Biochemistry Test 3","table_id":"20005835","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
@@ -143,7 +149,7 @@
 						]},
 						{"name":"8a. CPAP Compliance Data Treatment Arm 2 (Week 20)","modules":[
 							{"module_id":"m_010_002","name":"CPAP Summary","table_id":"20005887","url":"/modules/dynamic/ppl07/task/cpap_summary.html","counting":"1"}
-							,{"module_id":"m_010_003","name":"Compliance Upload","table_id":"20005886","url":"/modules/dynamic/ppl07/task/document.html","counting":"1"}
+							,{"module_id":"m_010_003","name":"Compliance Upload","table_id":"20005886","url":"/modules/dynamic/ppl07/task/document_3.html","counting":"1"}
 							]},
 						{"name":"Special Forms (Un-Scheduled Encounter)","modules":[
 							{"module_id":"m_011_001","name":"Concom Medications","table_id":"20005778","url":"/modules/dynamic/ppl07/task/concom_medications.html","counting":"1"}
