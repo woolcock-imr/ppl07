@@ -1,0 +1,60 @@
+<section>
+    VmInclude:__PARTS__/grid/grid.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+
+        VmInclude:__PARTS__/grid/grid.js
+        VmInclude:__PARTS__/style/ease-in-out.js
+		VmInclude:__CURRENT_PATH__/task.js
+        //-------------------------------------
+        _task_fields="\
+            Initials|Initials,\
+            Location|LocationID,\
+            Randomisation Number|RandomisationNumber,\
+            Arm|ArmID,\
+            Date|DateID,\
+            Time|TimeID,\
+            Sex|SexID,\
+            Sequence|SeqID,\
+            Performance Date|PerformanceDate,\
+            DOB|DOBID,\
+            PSQI_Q1|PSQI_Q1,\
+            PSQI_Q2|PSQI_Q2,\
+            PSQI_Q3|PSQI_Q3,\
+            PSQI_Q4|PSQI_Q4,\
+            PSQI_Q5a|PSQI_Q5a,\
+            PSQI_Q5b|PSQI_Q5b,\
+            PSQI_Q5c|PSQI_Q5c,\
+            PSQI_Q5d|PSQI_Q5d,\
+            PSQI_Q5e|PSQI_Q5e,\
+            PSQI_Q5f|PSQI_Q5f,\
+            PSQI_Q5g|PSQI_Q5g,\
+            PSQI_Q5h|PSQI_Q5h,\
+            PSQI_Q5i|PSQI_Q5i,\
+            PSQI_Q5jother|PSQI_Q5jother,\
+            PSQI_Q5j|PSQI_Q5j,\
+            PSQI_Q6|PSQI_Q6,\
+            PSQI_Q7|PSQI_Q7,\
+            PSQI_Q8|PSQI_Q8,\
+            PSQI_Q9|PSQI_Q9,\
+            PSQI_Q10|PSQI_Q10,\
+            PSQI_Q11a|PSQI_Q11a,\
+            PSQI_Q11b|PSQI_Q11b,\
+            PSQI_Q11c|PSQI_Q11c,\
+            PSQI_Q11d|PSQI_Q11d,\
+            PSQI_Q11eOther|PSQI_Q11eOther,\
+            PSQI_Q11e|PSQI_Q11e\
+		";
+		_fields="_Form,Volunteer_ID|VolunteerID_A,"+_task_fields;
+        _fields+=",Submit Date|DateTime,Submitted by|Author";
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data();  })
+        $('#D__ID').on('back',function(){  _set_req(); _request_data();  })
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__PARTS__/grid/grid.css
+</style>

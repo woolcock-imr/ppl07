@@ -1,0 +1,65 @@
+<section>
+    VmInclude:__PARTS__/grid/grid.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+
+        VmInclude:__PARTS__/grid/grid.js
+        VmInclude:__PARTS__/style/ease-in-out.js
+		VmInclude:__CURRENT_PATH__/task.js
+        //-------------------------------------
+        _task_fields="\
+            Initials|Initials,\
+            Location|LocationID,\
+            Randomisation Number|RandomisationNumber,\
+            Arm|ArmID,\
+            Date|DateID,\
+            Time|TimeID,\
+            Sex|SexID,\
+            Sequence|SeqID,\
+            Performance Date|PerformanceDate,\
+            DOB|DOBID,\
+            CPAPEvalQ1|'CPAPEvalQ1,\
+              CPAPEvalQ1a|'CPAPEvalQ1a,\
+              CPAPEvalQ2|'CPAPEvalQ2,\
+              CPAPEvalQ3|'CPAPEvalQ3,\
+              CPAPEvalQ3a|'CPAPEvalQ3a,\
+              CPAPEvalQ4|'CPAPEvalQ4,\
+              CPAPEvalQ5|'CPAPEvalQ5,\
+              CPAPEvalQ5Other|'CPAPEvalQ5Other,\
+              CPAPEvalQ6|'CPAPEvalQ6,\
+              CPAPEvalQ7|'CPAPEvalQ7,\
+              CPAPEvalQ8|'CPAPEvalQ8,\
+              CPAPEvalQ8a|'CPAPEvalQ8a,\
+              CPAPEvalQ9|'CPAPEvalQ9,\
+              CPAPEvalQ10|'CPAPEvalQ10,\
+              CPAPEvalQ11|'CPAPEvalQ11,\
+              CPAPEvalQ12_1|'CPAPEvalQ12_1,\
+              CPAPEvalQ12_2|'CPAPEvalQ12_2,\
+              CPAPEvalQ12_3|'CPAPEvalQ12_3,\
+              CPAPEvalQ12_4|'CPAPEvalQ12_4,\
+              CPAPEvalQ12_5|'CPAPEvalQ12_5,\
+              CPAPEvalQ12_6|'CPAPEvalQ12_6,\
+              CPAPEvalQ12_7|'CPAPEvalQ12_7,\
+              CPAPEvalQ12_8|'CPAPEvalQ12_8,\
+              CPAPEvalQ12_9|'CPAPEvalQ12_9,\
+              CPAPEvalQ12_10|'CPAPEvalQ12_10,\
+              CPAPEvalQ12_11|'CPAPEvalQ12_11,\
+              CPAPEvalQ13|'CPAPEvalQ13,\
+              CPAPEvalQ13Other|'CPAPEvalQ13Other,\
+              CPAPEvalQ14|'CPAPEvalQ14,\
+              CPAPEvalQ15|'CPAPEvalQ15,\
+              CPAPEvalQ15Other|'CPAPEvalQ15Other\
+       		";
+		_fields="_Form,Volunteer_ID|VolunteerID_A,"+_task_fields;
+        _fields+=",Submit Date|DateTime,Submitted by|Author";
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data();  })
+        $('#D__ID').on('back',function(){  _set_req(); _request_data();  })
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__PARTS__/grid/grid.css
+</style>

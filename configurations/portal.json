@@ -1,0 +1,123 @@
+{
+	"name":"ppl07",
+	"url":"/modules/dynamic/panel.html",
+	"parameters":{
+		"sql_participant" : "@('Volunteer_ID')+' '+@('Initials')+' '+@('DOB')"
+	},
+	"panel":
+	{
+		"columns":
+		[
+			{
+				"sections":[{"name":"Participants","modules":[
+					{"module_id":"participant","name":"Participants","table_id":"20004263","url":"/modules/dynamic/ppl07/participant.html","counting":"1"}
+					]}]
+			}
+			,{
+				"sections":[
+					{"name":"1. Screening","modules":[
+					{"module_id":"m_001_001","name":"PSG Sandman","table_id":"20005792","url":"/modules/dynamic/ppl07/task/psg_sandman.html","counting":"1"}
+					,{"module_id":"m_001_002","name":"PSG Compumedics","table_id":"20005791","url":"/modules/dynamic/ppl07/task/psg_compumedics.html","counting":"1"}
+					,{"module_id":"m_001_003","name":"PSG Alice","table_id":"20005790","url":"/modules/dynamic/ppl07/task/psg_alice.html","counting":"1"}
+					,{"module_id":"m_001_004","name":"Biochemistry Test","table_id":"20005789","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
+				]}
+			]}
+			,{
+			"sections":[
+					{"name":"2. CBT CPAP Education, Ad Hoc Visits and CPAP Call Log","modules":[
+						{"module_id":"m_002_001","name":"CBT CPAP - CPAP Initiation","table_id":"20005777","url":"/modules/dynamic/ppl07/task/document.html","counting":"1"}
+						,{"module_id":"m_002_002","name":"CPAP Ad Hoc Visits","table_id":"20005779","url":"/modules/dynamic/ppl07/task/document_3.html","counting":"1"}
+						,{"module_id":"m_002_003","name":"CPAP Call Log","table_id":"20005780","url":"/modules/dynamic/ppl07/task/document_3.html","counting":"1"}
+						]},
+					{"name":"3. Hospital Stay 1 (Week 0)","modules":[
+						{"module_id":"m_003_002","name":"PWA 1 upload","table_id":"20005783","url":"/modules/dynamic/ppl07/task/pwa.html","counting":"1"}
+						,{"module_id":"m_003_003","name":"PWA 2 upload","table_id":"20005786","url":"/modules/dynamic/ppl07/task/pwa.html","counting":"1"}
+						,{"module_id":"m_003_004","name":"Randomisation","table_id":"20005816","url":"/modules/dynamic/ppl07/task/randomisation.html","counting":"1"}
+						,{"module_id":"m_003_004","name":"Anthropometric","table_id":"20005795","url":"/modules/dynamic/ppl07/task/anthropometry.html","counting":"1"}
+						,{"module_id":"m_003_005","name":"ESS","table_id":"20005806","url":"/modules/dynamic/ppl07/task/ess.html","counting":"1"}
+						,{"module_id":"m_003_006","name":"FOSQ","table_id":"20005807","url":"/modules/dynamic/ppl07/task/fosq.html","counting":"1"}
+						,{"module_id":"m_003_007","name":"DASS","table_id":"20005805","url":"/modules/dynamic/ppl07/task/dass.html","counting":"1"}
+						,{"module_id":"m_003_008","name":"Happy Questionnaire","table_id":"20005809","url":"/modules/dynamic/ppl07/task/hq.html","counting":"1"}
+						,{"module_id":"m_003_009","name":"PSQI","table_id":"20005813","url":"/modules/dynamic/ppl07/task/psqi.html","counting":"1"}
+						,{"module_id":"m_003_010","name":"PWA 1","table_id":"20005814","url":"/modules/dynamic/ppl07/task/pwa.html","counting":"1"}
+						,{"module_id":"m_003_011","name":"PWA 2","table_id":"20005815","url":"/modules/dynamic/ppl07/task/pwa.html","counting":"1"}
+						,{"module_id":"m_003_012","name":"Biochemistry Test 1","table_id":"20005796","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
+						,{"module_id":"m_003_013","name":"Biochemistry Test 2","table_id":"20005797","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
+						,{"module_id":"m_003_014","name":"Biochemistry Test 3","table_id":"20005798","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
+						,{"module_id":"m_003_015","name":"Biochemistry Test 4","table_id":"20005799","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
+						,{"module_id":"m_003_016","name":"Biochemistry Test 5","table_id":"20005800","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
+						,{"module_id":"m_003_017","name":"Biochemistry Test 6","table_id":"20005801","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
+						,{"module_id":"m_003_018","name":"Biochemistry Test 7","table_id":"20005802","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
+						,{"module_id":"m_003_019","name":"Urine Result 1","table_id":"20005819","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
+						,{"module_id":"m_003_020","name":"Urine Result 2","table_id":"20005820","url":"/modules/dynamic/ppl07/task/biochemistry.html","counting":"1"}
+						,{"module_id":"m_003_021","name":"PSG Compumedics","table_id":"20005811","url":"/modules/dynamic/ppl07/task/psg_compumedics.html","counting":"1"}
+						,{"module_id":"m_003_022","name":"PSG Alice","table_id":"20005810","url":"/modules/dynamic/ppl07/task/psg_alice.html","counting":"1"}
+						,{"module_id":"m_003_023","name":"PSG Sandman","table_id":"20005812","url":"/modules/dynamic/ppl07/task/psg_sandman.html","counting":"1"}
+						,{"module_id":"m_003_024","name":"Upload MRS","table_id":"20005817","url":"/modules/dynamic/ppl07/task/document_3.html","counting":"1"}
+						,{"module_id":"m_003_025","name":"FOSQ paper based version upload","table_id":"20005808","url":"/modules/dynamic/ppl07/task/document.html","counting":"1"}
+						,{"module_id":"m_003_026","name":"CPAP Summary","table_id":"20005804","url":"/modules/dynamic/ppl07/task/cpap_summary.html","counting":"1"}
+						,{"module_id":"m_003_027","name":"CPAP Compliance Upload","table_id":"20005803","url":"/modules/dynamic/ppl07/task/document_3.html","counting":"1"}
+					]}
+				]}
+				,{
+				"sections":[
+					{"name":"4. Neurocognitive Test Battery (Initial)","modules":[
+						{"module_id":"m_004_002","name":"Background and Demographics","table_id":"20006746","url":"/modules/dynamic/ppl07/task/background.html","counting":"1"}
+						,{"module_id":"m_004_003","name":"Visual Analogue Scale 1","table_id":"20006761","url":"/modules/dynamic/ppl07/task/vas.html","counting":"1"}
+						,{"module_id":"m_004_004","name":"Letter Cancellation Task (LCT)","table_id":"20006748","url":"/modules/dynamic/ppl07/task/lct.html","counting":"1"}
+						,{"module_id":"m_004_004","name":"Digit Symbol Substitution Task (DSST)","table_id":"20006747","url":"/modules/dynamic/ppl07/task/dsst.html","counting":"1"}
+						,{"module_id":"m_004_005","name":"Stroop Text","table_id":"20006759","url":"/modules/dynamic/ppl07/task/stroop.html","counting":"1"}
+						,{"module_id":"m_004_007","name":"Stroop Colour","table_id":"20006758","url":"/modules/dynamic/ppl07/task/stroop.html","counting":"1"}
+						,{"module_id":"m_004_008","name":"1-back","table_id":"20006742","url":"/modules/dynamic/ppl07/task/nback.html","counting":"1"}
+						,{"module_id":"m_004_009","name":"2-back","table_id":"20006744","url":"/modules/dynamic/ppl07/task/nback.html","counting":"1"}
+						,{"module_id":"m_004_010","name":"Visual Analogue Scale 2","table_id":"20006762","url":"/modules/dynamic/ppl07/task/vas.html","counting":"1"}
+						,{"module_id":"m_004_011","name":"3-back","table_id":"20006745","url":"/modules/dynamic/ppl07/task/nback.html","counting":"1"}
+						,{"module_id":"m_004_012","name":"Tower of London","table_id":"20006760","url":"/modules/dynamic/ppl07/task/tol.html","counting":"1"}
+						,{"module_id":"m_004_013","name":"Psychomotor Vigilance Task 192 (PVT)","table_id":"20006749","url":"/modules/dynamic/ppl07/task/pvt.html","counting":"1"}
+						,{"module_id":"m_004_014","name":"PVT Raw Data and Report","table_id":"20006750","url":"/modules/dynamic/ppl07/task/document_3.html","counting":"1"}
+						,{"module_id":"m_004_015","name":"Visual Analogue Scale 3","table_id":"20006763","url":"/modules/dynamic/ppl07/task/vas.html","counting":"1"}
+						,{"module_id":"m_004_016","name":"Sleep Diary Night 7 (Test Day-1)","table_id":"20006757","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_004_017","name":"Sleep Diary Night 6 (Test Day-2)","table_id":"20006756","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_004_018","name":"Sleep Diary Night 5 (Test Day-3)","table_id":"20006755","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_004_019","name":"Sleep Diary Night 4 (Test Day-4)","table_id":"20006754","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_004_020","name":"Sleep Diary Night 3 (Test Day-5)","table_id":"20006753","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_004_021","name":"Sleep Diary Night 2 (Test Day-6)","table_id":"20006752","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_004_022","name":"Sleep Diary Night 1 (Test Day-7)","table_id":"20006751","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_004_023","name":"1-back DO NOT USE - Repeat for M-W13 only","table_id":"20006743","url":"/modules/dynamic/ppl07/task/nback.html","counting":"1"}
+						]}
+				]}
+				,{
+				"sections":[
+					{"name":"5. Neurocognitive Test Battery (Repeat)","modules":[
+						{"module_id":"m_005_003","name":"Visual Analogue Scale 1","table_id":"20006781","url":"/modules/dynamic/ppl07/task/vas.html","counting":"1"}
+						,{"module_id":"m_005_004","name":"Letter Cancellation Task (LCT)","table_id":"20006786","url":"/modules/dynamic/ppl07/task/lct.html","counting":"1"}
+						,{"module_id":"m_005_004","name":"Digit Symbol Substitution Task (DSST)","table_id":"20006767","url":"/modules/dynamic/ppl07/task/dsst.html","counting":"1"}
+						,{"module_id":"m_005_005","name":"Stroop Text","table_id":"20006779","url":"/modules/dynamic/ppl07/task/stroop.html","counting":"1"}
+						,{"module_id":"m_005_007","name":"Stroop Colour","table_id":"20006778","url":"/modules/dynamic/ppl07/task/stroop.html","counting":"1"}
+						,{"module_id":"m_005_008","name":"1-back","table_id":"20006764","url":"/modules/dynamic/ppl07/task/nback.html","counting":"1"}
+						,{"module_id":"m_005_009","name":"2-back","table_id":"20006765","url":"/modules/dynamic/ppl07/task/nback.html","counting":"1"}
+						,{"module_id":"m_005_010","name":"Visual Analogue Scale 2","table_id":"20006782","url":"/modules/dynamic/ppl07/task/vas.html","counting":"1"}
+						,{"module_id":"m_005_011","name":"3-back","table_id":"20006766","url":"/modules/dynamic/ppl07/task/nback.html","counting":"1"}
+						,{"module_id":"m_005_012","name":"Tower of London","table_id":"20006780","url":"/modules/dynamic/ppl07/task/tol.html","counting":"1"}
+						,{"module_id":"m_005_013","name":"Psychomotor Vigilance Task 192 (PVT)","table_id":"20006769","url":"/modules/dynamic/ppl07/task/pvt.html","counting":"1"}
+						,{"module_id":"m_005_014","name":"PVT Raw Data and Report","table_id":"20006770","url":"/modules/dynamic/ppl07/task/document_3.html","counting":"1"}
+						,{"module_id":"m_005_015","name":"Visual Analogue Scale 3","table_id":"20006783","url":"/modules/dynamic/ppl07/task/vas.html","counting":"1"}
+						,{"module_id":"m_005_016","name":"Sleep Diary Night 7 (Test Day-1)","table_id":"20006777","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_005_017","name":"Sleep Diary Night 6 (Test Day-2)","table_id":"20006776","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_005_018","name":"Sleep Diary Night 5 (Test Day-3)","table_id":"20006775","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_005_019","name":"Sleep Diary Night 4 (Test Day-4)","table_id":"20006774","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_005_020","name":"Sleep Diary Night 3 (Test Day-5)","table_id":"20006773","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_005_021","name":"Sleep Diary Night 2 (Test Day-6)","table_id":"20006772","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+						,{"module_id":"m_005_022","name":"Sleep Diary Night 1 (Test Day-7)","table_id":"20006771","url":"/modules/dynamic/ppl07/task/sleep_diary.html","counting":"1"}
+					]},
+					{"name":"Special Forms (Un-Scheduled Encounter)","modules":[
+						{"module_id":"m_009_001","name":"Concom Medications","table_id":"20006785","url":"/modules/dynamic/ppl07/task/concom_medications.html","counting":"1"}
+						,{"module_id":"m_009_002","name":"Adverse Event","table_id":"20006784","url":"/modules/dynamic/ppl07/task/adverse_event.html","counting":"1"}
+						,{"module_id":"m_009_003","name":"File Notes","table_id":"20006786","url":"/modules/dynamic/ppl07/task/File_Notes.html","counting":"1"}
+						,{"module_id":"m_009_004","name":"Serious Adverse Event","table_id":"20006787","url":"/modules/dynamic/ppl07/task/Serious_Adverse_Event.html","counting":"1"}
+						,{"module_id":"m_009_005","name":"Serious Adverse Event Follow Up","table_id":"20006788","url":"/modules/dynamic/ppl07/task/Serious_Adverse_Event_Follow_Up.html","counting":"1"}
+						]}
+					]}
+				]
+			}
+		}

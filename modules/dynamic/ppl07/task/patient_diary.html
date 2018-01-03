@@ -1,0 +1,76 @@
+<section>
+    VmInclude:__PARTS__/grid/grid.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+
+        VmInclude:__PARTS__/grid/grid.js
+        VmInclude:__PARTS__/style/ease-in-out.js
+		VmInclude:__CURRENT_PATH__/task.js
+        //-------------------------------------
+        _task_fields="\
+            Initials|Initials,\
+            Location|LocationID,\
+            Randomisation Number|RandomisationNumber,\
+            Arm|ArmID,\
+            Date|DateID,\
+            Time|TimeID,\
+            Sex|SexID,\
+            Sequence|SeqID,\
+            Performance Date|PerformanceDate,\
+            DOB|DOBID,\
+            Date1|'Date1,\
+            SleepTime1|'SleepTime1,\
+            DeviceUse1|'DeviceUse1,\
+            NoUse1|'NoUse1,\
+            Snore1|'Snore1,\
+            Discomfort1|'Discomfort1,\
+            Date2|'Date2,\
+            SleepTime2|'SleepTime2,\
+            DeviceUse2|'DeviceUse2,\
+            NoUse2|'NoUse2,\
+            Snore2|'Snore2,\
+            Discomfort2|'Discomfort2,\
+            Date3|'Date3,\
+            SleepTime3|'SleepTime3,\
+            DeviceUse3|'DeviceUse3,\
+            NoUse3|'NoUse3,\
+            Snore3|'Snore3,\
+            Discomfort3|'Discomfort3,\
+            Date4|'Date4,\
+            SleepTime4|'SleepTime4,\
+            DeviceUse4|'DeviceUse4,\
+            NoUse4|'NoUse4,\
+            Snore4|'Snore4,\
+            Discomfort4|'Discomfort4,\
+            Date5|'Date5,\
+            SleepTime5|'SleepTime5,\
+            DeviceUse5|'DeviceUse5,\
+            NoUse5|'NoUse5,\
+            Snore5|'Snore5,\
+            Discomfort5|'Discomfort5,\
+            Date6|'Date6,\
+            SleepTime6|'SleepTime6,\
+            DeviceUse6|'DeviceUse6,\
+            NoUse6|'NoUse6,\
+            Snore6|'Snore6,\
+            Discomfort6|'Discomfort6,\
+            Date7|'Date7,\
+            SleepTime7|'SleepTime7,\
+            DeviceUse7|'DeviceUse7,\
+            NoUse7|'NoUse7,\
+            Snore7|'Snore7,\
+            Discomfort7|'Discomfort7\
+		";
+		_fields="_Form,Volunteer_ID|VolunteerID_A,"+_task_fields;
+        _fields+=",Submit Date|DateTime,Submitted by|Author";
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data();  })
+        $('#D__ID').on('back',function(){  _set_req(); _request_data();  })
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__PARTS__/grid/grid.css
+</style>

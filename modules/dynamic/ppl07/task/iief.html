@@ -1,0 +1,54 @@
+<section>
+    VmInclude:__PARTS__/grid/grid.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__PARTS__/grid/grid.js
+        VmInclude:__PARTS__/style/ease-in-out.js
+		VmInclude:__CURRENT_PATH__/task.js
+        //-------------------------------------
+        _task_fields="\
+			Initials|Initials,\
+	        Location|LocationID,\
+	        Randomisation Number|RandomisationNumber,\
+	        Arm|ArmID,\
+	        Date|DateID,\
+	        Time|TimeID,\
+	        Sex|SexID,\
+	        Sequence|SeqID,\
+	        Performance Date|PerformanceDate,\
+	        DOB|DOBID,\
+			IIEF|IIEF,\
+	        IIEF_ED|IIEF_ED,\
+	        IIEF_IS|IIEF_IS,\
+	        IIEF_OF|IIEF_OF,\
+	        IIEF_OS|IIEF_OS,\
+	        IIEF_SD|IIEF_SD,\
+	        IIEF1|IIEF1,\
+	        IIEF2|IIEF2,\
+	        IIEF3|IIEF3,\
+	        IIEF4|IIEF4,\
+	        IIEF5|IIEF5,\
+	        IIEF6|IIEF6,\
+	        IIEF7|IIEF7,\
+	        IIEF8|IIEF8,\
+	        IIEF9|IIEF9,\
+	        IIEF10|IIEF10,\
+	        IIEF11|IIEF11,\
+	        IIEF12|IIEF12,\
+	        IIEF13|IIEF13,\
+	        IIEF14|IIEF14,\
+	        IIEF15|IIEF15\
+		";
+		_fields="_Form,Volunteer_ID|VolunteerID_A,"+_task_fields;
+        _fields+=",Submit Date|DateTime,Submitted by|Author";
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data();  })
+        $('#D__ID').on('back',function(){  _set_req(); _request_data();  })
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__PARTS__/grid/grid.css
+</style>

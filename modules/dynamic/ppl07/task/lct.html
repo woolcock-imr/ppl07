@@ -1,0 +1,62 @@
+<section>
+    VmInclude:__PARTS__/grid/grid.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+
+        VmInclude:__PARTS__/grid/grid.js
+        VmInclude:__PARTS__/style/ease-in-out.js
+		VmInclude:__CURRENT_PATH__/task.js
+        //-------------------------------------
+        _task_fields="\
+            Initials|Initials,\
+            Location|LocationID,\
+            Randomisation Number|RandomisationNumber,\
+            Arm|ArmID,\
+            Date|DateID,\
+            Time|TimeID,\
+            Sex|SexID,\
+            Sequence|SeqID,\
+            Performance Date|PerformanceDate,\
+            DOB|DOBID,\
+            Duration_0|Duration_0,\
+            Hits_0|Hits_0,\
+            Omissions_0|Omissions_0,\
+            Commissions_0|Commissions_0,\
+            Duration_1|Duration_1,\
+            Hits_1|Hits_1,\
+            Omissions_1|Omissions_1,\
+            Commissions_1|Commissions_1,\
+            Duration_2|Duration_2,\
+            Hits_2|Hits_2,\
+            Omissions_2|Omissions_2,\
+            Commissions_2|Commissions_2,\
+            Duration_3|Duration_3,\
+            Hits_3|Hits_3,\
+            Omissions_3|Omissions_3,\
+            Commissions_3|Commissions_3,\
+            Duration_4|Duration_4,\
+            Hits_4|Hits_4,\
+            Omissions_4|Omissions_4,\
+            Commissions_4|Commissions_4,\
+            Duration_5|Duration_5,\
+            Hits_5|Hits_5,\
+            Omissions_5|Omissions_5,\
+            Commissions_5|Commissions_5,\
+            Duration_6|Duration_6,\
+            Hits_6|Hits_6,\
+            Omissions_6|Omissions_6,\
+            Commissions_6|Commissions_6\
+		";
+		_fields="_Form,Volunteer_ID|VolunteerID_A,"+_task_fields;
+        _fields+=",Submit Date|DateTime,Submitted by|Author";
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data();  })
+        $('#D__ID').on('back',function(){  _set_req(); _request_data();  })
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__PARTS__/grid/grid.css
+</style>

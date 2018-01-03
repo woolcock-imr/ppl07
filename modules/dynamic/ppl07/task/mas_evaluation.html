@@ -1,0 +1,65 @@
+<section>
+    VmInclude:__PARTS__/grid/grid.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+
+        VmInclude:__PARTS__/grid/grid.js
+        VmInclude:__PARTS__/style/ease-in-out.js
+		VmInclude:__CURRENT_PATH__/task.js
+        //-------------------------------------
+        _task_fields="\
+            Initials|Initials,\
+            Location|LocationID,\
+            Randomisation Number|RandomisationNumber,\
+            Arm|ArmID,\
+            Date|DateID,\
+            Time|TimeID,\
+            Sex|SexID,\
+            Sequence|SeqID,\
+            Performance Date|PerformanceDate,\
+            DOB|DOBID,\
+            MASEvalQ1|'MASEvalQ1,\
+              MASEvalQ1a|'MASEvalQ1a,\
+              MASEvalQ2|'MASEvalQ2,\
+              MASEvalQ3|'MASEvalQ3,\
+              MASEvalQ3a|'MASEvalQ3a,\
+              MASEvalQ4|'MASEvalQ4,\
+              MASEvalQ5|'MASEvalQ5,\
+              MASEvalQ5Other|'MASEvalQ5Other,\
+              MASEvalQ6|'MASEvalQ6,\
+              MASEvalQ7|'MASEvalQ7,\
+              MASEvalQ8|'MASEvalQ8,\
+              MASEvalQ8a|'MASEvalQ8a,\
+              MASEvalQ9|'MASEvalQ9,\
+              MASEvalQ10|'MASEvalQ10,\
+              MASEvalQ11|'MASEvalQ11,\
+              MASEvalQ12_1|'MASEvalQ12_1,\
+              MASEvalQ12_2|'MASEvalQ12_2,\
+              MASEvalQ12_3|'MASEvalQ12_3,\
+              MASEvalQ12_4|'MASEvalQ12_4,\
+              MASEvalQ12_5|'MASEvalQ12_5,\
+              MASEvalQ12_6|'MASEvalQ12_6,\
+              MASEvalQ12_7|'MASEvalQ12_7,\
+              MASEvalQ12_8|'MASEvalQ12_8,\
+              MASEvalQ12_9|'MASEvalQ12_9,\
+              MASEvalQ12_10|'MASEvalQ12_10,\
+              MASEvalQ12_11|'MASEvalQ12_11,\
+              MASEvalQ13|'MASEvalQ13,\
+              MASEvalQ13Other|'MASEvalQ13Other,\
+              MASEvalQ14|'MASEvalQ14,\
+              MASEvalQ15|'MASEvalQ15,\
+              MASEvalQ15Other|'MASEvalQ15Other\
+       		";
+		_fields="_Form,Volunteer_ID|VolunteerID_A,"+_task_fields;
+        _fields+=",Submit Date|DateTime,Submitted by|Author";
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data();  })
+        $('#D__ID').on('back',function(){  _set_req(); _request_data();  })
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__PARTS__/grid/grid.css
+</style>

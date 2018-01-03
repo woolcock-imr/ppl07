@@ -1,0 +1,53 @@
+<section>
+    VmInclude:__PARTS__/grid/grid.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+        VmInclude:__PARTS__/grid/grid.js
+        VmInclude:__PARTS__/style/ease-in-out.js
+		VmInclude:__CURRENT_PATH__/task.js
+        //-------------------------------------
+        _task_fields="\
+			Initials|Initials,\
+	        Location|LocationID,\
+	        Randomisation Number|RandomisationNumber,\
+	        Arm|ArmID,\
+	        Date|DateID,\
+	        Time|TimeID,\
+	        Sex|SexID,\
+	        Sequence|SeqID,\
+	        Performance Date|PerformanceDate,\
+	        DOB|DOBID,\
+			MASAssessmentQ0a|MASAssessmentQ0a,\
+	        MASAssessmentQ0b|MASAssessmentQ0b,\
+	        MASAssessmentQ1|MASAssessmentQ1,\
+	        MASAssessmentQ2|_MASAssessmentQ2,\
+	        MASAssessmentQ2Other|MASAssessmentQ2Other,\
+	        MASAssessmentQ3|MASAssessmentQ3,\
+	        MASAssessmentQ3Ohter|MASAssessmentQ3Ohter,\
+	        MASAssessmentQ4|MASAssessmentQ4,\
+	        MASAssessmentQ5|MASAssessmentQ5,\
+	        MASAssessmentQ6|MASAssessmentQ6,\
+	        MASAssessmentQ7|MASAssessmentQ7,\
+	        MASAssessmentQ8|MASAssessmentQ8,\
+	        MASAssessmentQ8Other|MASAssessmentQ8Other,\
+	        MASAssessmentQ9|MASAssessmentQ9,\
+	        MASAssessmentQ9Other|MASAssessmentQ9Other,\
+	        MASAssessmentQ10|MASAssessmentQ10,\
+	        MASAssessmentQ10Other|MASAssessmentQ10Other,\
+	        MASAssessmentQ11|MASAssessmentQ11,\
+	        MASAssessmentQ11Other|MASAssessmentQ11Other,\
+	        MASAssessmentQ12|MASAssessmentQ12\
+	 		";
+		_fields="_Form,Volunteer_ID|VolunteerID_A,"+_task_fields;
+        _fields+=",Submit Date|DateTime,Submitted by|Author";
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data();  })
+        $('#D__ID').on('back',function(){  _set_req(); _request_data();  })
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__PARTS__/grid/grid.css
+</style>

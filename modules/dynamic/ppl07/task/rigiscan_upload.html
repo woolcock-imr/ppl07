@@ -1,0 +1,140 @@
+<section>
+    VmInclude:__PARTS__/grid/grid.html
+</section>
+<script>
+    function F__ID(){
+        //-------------------------------------
+
+        VmInclude:__PARTS__/grid/grid.js
+        VmInclude:__PARTS__/style/ease-in-out.js
+		VmInclude:__CURRENT_PATH__/task.js
+        //-------------------------------------
+        _task_fields="\
+            Initials|Initials,\
+            Location|LocationID,\
+            Randomisation Number|RandomisationNumber,\
+            Arm|ArmID,\
+            Date|DateID,\
+            Time|TimeID,\
+            Sex|SexID,\
+            Sequence|SeqID,\
+            Performance Date|PerformanceDate,\
+            DOB|DOBID,\
+            FilenameLocal,\
+            PatientID,\
+            Rigi_dur_all,\
+            Rigi_Total_All,\
+            Rigi_totaldur_all,\
+            Rigi_Percent_All,\
+            Tip_AvgRig_All,\
+            Tip_80_100_All,\
+            Tip_60_79_All,\
+            Tip_40_59_All,\
+            Tip_20_39_All,\
+            Tip_0_19_All,\
+            Tip_Circum_All,\
+            Tip_AveTum_All,\
+            Tip_compare_All,\
+            Tip_RAU_All,\
+            Tip_TAU_All,\
+            Base_AvgRig_All,\
+            Base_80_100_All,\
+            Base_60_79_All,\
+            Base_40_59_All,\
+            Base_20_39_All,\
+            Base_0_19_All,\
+            Base_circum_All,\
+            Base_AveTum_All,\
+            Base_compare_All,\
+            Base_RAU_All,\
+            Base_TAU_All,\
+            Rigi_dur_1,\
+            Rigi_Total_1,\
+            Rigi_totaldur_1,\
+            Rigi_Percent_1,\
+            Tip_AvgRig_1,\
+            Tip_80_100_1,\
+            Tip_60_79_1,\
+            Tip_40_59_1,\
+            Tip_20_39_1,\
+            Tip_0_19_1,\
+            Tip_Circum_1,\
+            Tip_AveTum_1,\
+            Tip_compare_1,\
+            Tip_RAU_1,\
+            Tip_TAU_1,\
+            Base_AvgRig_1,\
+            Base_80_100_1,\
+            Base_60_79_1,\
+            Base_40_59_1,\
+            Base_20_39_1,\
+            Base_0_19_1,\
+            Base_circum_1,\
+            Base_AveTum_1,\
+            Base_compare_1,\
+            Base_RAU_1,\
+            Base_TAU_1,\
+            Rigi_dur_2,\
+            Rigi_Total_2,\
+            Rigi_totaldur_2,\
+            Rigi_Percent_2,\
+            Tip_AvgRig_2,\
+            Tip_80_100_2,\
+            Tip_60_79_2,\
+            Tip_40_59_2,\
+            Tip_20_39_2,\
+            Tip_0_19_2,\
+            Tip_Circum_2,\
+            Tip_AveTum_2,\
+            Tip_compare_2,\
+            Tip_RAU_2,\
+            Tip_TAU_2,\
+            Base_AvgRig_2,\
+            Base_80_100_2,\
+            Base_60_79_2,\
+            Base_40_59_2,\
+            Base_20_39_2,\
+            Base_0_19_2,\
+            Base_circum_2,\
+            Base_AveTum_2,\
+            Base_compare_2,\
+            Base_RAU_2,\
+            Base_TAU_2,\
+            Rigi_dur_3,\
+            Rigi_Total_3,\
+            Rigi_totaldur_3,\
+            Rigi_Percent_3,\
+            Tip_AvgRig_3,\
+            Tip_80_100_3,\
+            Tip_60_79_3,\
+            Tip_40_59_3,\
+            Tip_20_39_3,\
+            Tip_0_19_3,\
+            Tip_Circum_3,\
+            Tip_AveTum_3,\
+            Tip_compare_3,\
+            Tip_RAU_3,\
+            Tip_TAU_3,\
+            Base_AvgRig_3,\
+            Base_80_100_3,\
+            Base_60_79_3,\
+            Base_40_59_3,\
+            Base_20_39_3,\
+            Base_0_19_3,\
+            Base_circum_3,\
+            Base_AveTum_3,\
+            Base_compare_3,\
+            Base_RAU_3,\
+            Base_TAU_3\
+		";
+		_fields="_Form,Volunteer_ID|VolunteerID_A,"+_task_fields;
+        _fields+=",Submit Date|DateTime,Submitted by|Author";
+        //-------------------------------------
+        $('#D__ID').on('load',function(){  _set_req(); _request_data();  })
+        $('#D__ID').on('back',function(){  _set_req(); _request_data();  })
+        //-------------------------------------
+    }
+</script>
+<style>
+    VmInclude:__PARTS__/grid/grid.css
+</style>
